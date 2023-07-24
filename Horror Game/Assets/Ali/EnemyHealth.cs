@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    // this script is accessing FloatingHealthBar script
     public int maxHealth = 5;
     public int Health;
 
