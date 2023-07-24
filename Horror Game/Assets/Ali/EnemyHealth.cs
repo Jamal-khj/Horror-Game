@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int currentHealth;
+    public int maxHealth = 5;
+    public int Health;
+
+    [SerializeField] FloatingHealthBar healthBar;
+
+    private void Awake()
+    {
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+    }
 
     void Start()
     {
-        currentHealth = maxHealth;
+        Health = maxHealth;
+        healthBar.UpdateHealthBar(Health, maxHealth);
     }
 
     void Update()
@@ -19,8 +27,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount) // int amount for how much damage to take
     {
-        currentHealth -= amount;
-        if(currentHealth <= 0 )
+        Health -= amount;
+        healthBar.UpdateHealthBar(Health, maxHealth);
+        if(Health <= 0 )
         {
             Destroy(gameObject);
         }
