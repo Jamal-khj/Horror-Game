@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 1111747235}
   - component: {fileID: 1111747234}
   - component: {fileID: 1111747233}
+  - component: {fileID: 1111747239}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy1
@@ -668,6 +669,8 @@ MonoBehaviour:
   player: {fileID: 1984973542}
   Enemyspeed: 1
   distanceBetween: 7
+  ismoving: 0
+  animator: {fileID: 1295247434}
 --- !u!61 &1111747235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -809,6 +812,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1111747239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111747232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf81059d46f6f4b47914040dc8b76335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1295247434}
+  isAttacking: 0
 --- !u!1 &1128152263
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +930,7 @@ GameObject:
   - component: {fileID: 1295247433}
   - component: {fileID: 1295247434}
   m_Layer: 0
-  m_Name: Sprite
+  m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1324,7 +1341,7 @@ GameObject:
   - component: {fileID: 1984973543}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,7 +1384,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1984973545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1473,7 +1490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984973542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.29, y: -3.3, z: 0}
+  m_LocalPosition: {x: -6.3, y: -2.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
