@@ -38,5 +38,32 @@ public class health : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+     
     }
-}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.tag == "Enemy1")
+        {
+            Destroy(collision.collider.gameObject);
+            hp -= 1;
+            for (int i = 0; i < hearts.Length; i++)
+            {
+                if (i < hp)
+                {
+                    hearts[i].enabled = true;
+                }
+                else
+                {
+                    hearts[i].enabled = false;
+                }
+            }
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+                
+
+            }
+
+        }
+    }
+    }
