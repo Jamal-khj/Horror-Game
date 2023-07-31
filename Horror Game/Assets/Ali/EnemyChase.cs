@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyChase : MonoBehaviour
 {
     public GameObject player;
+    public GameObject enemyStart;
     public float Enemyspeed;
     public float distanceBetween;
 
@@ -43,6 +44,8 @@ public class EnemyChase : MonoBehaviour
         else if (distance > distanceBetween)
 
             {
+                transform.position = Vector2.MoveTowards(this.transform.position, enemyStart.transform.position, Enemyspeed * Time.deltaTime); // moves this object towards the player object
+            //transform.rotation = Quaternion.Euler(Vector3.forward * angle); // rotates this object towards player object
                 ismoving = false;
             }
 
