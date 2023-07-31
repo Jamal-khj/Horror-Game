@@ -831,8 +831,16 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1128152264}
+    - target: {fileID: 1146429117043053995, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1270597541320108194, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299259362249326814, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470380363523462400, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
