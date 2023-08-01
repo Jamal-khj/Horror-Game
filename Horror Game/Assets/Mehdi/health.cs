@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class health : MonoBehaviour
 {
     public int hp;
@@ -44,7 +45,7 @@ public class health : MonoBehaviour
     {
         if (collision.collider.gameObject.tag == "Enemy1")
         {
-            Destroy(collision.collider.gameObject);
+            //Destroy(collision.collider.gameObject);
             hp -= 1;
             for (int i = 0; i < hearts.Length; i++)
             {
@@ -60,7 +61,8 @@ public class health : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
-                
+
+                SceneManager.LoadScene("GameOver");
 
             }
 
