@@ -32,6 +32,15 @@ public class EnemyAtkAnim : MonoBehaviour
          {
           isAttacking = false;
          }
+         
 
      }
+
+    // void OnCollisionExit2D(Collision collision)
+     //{
+        //if(collision.collider.gameObject.tag == "Player")
+        // {
+         // isAttacking = false;
+        // }
+    // }
 }
