@@ -52,6 +52,8 @@ public class EnemyChase : MonoBehaviour
                 ismoving = false;
             }
 
+            
+
 
     }
 }
