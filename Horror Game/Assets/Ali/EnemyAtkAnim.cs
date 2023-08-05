@@ -5,11 +5,9 @@ using UnityEngine;
 public class EnemyAtkAnim : MonoBehaviour
 {
     public Animator animator;
-
     public bool isAttacking;
 
-
-     void Start()
+    void Start()
     {
         isAttacking = false;
     }
@@ -17,30 +15,22 @@ public class EnemyAtkAnim : MonoBehaviour
     void Update()
     {
         animator.SetBool("Attack", isAttacking);
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
      {
-
-         if(collision.collider.gameObject.tag == "Player")
-         {
-          isAttacking = true;
-         }
-
-         else 
-         {
-          isAttacking = false;
-         }
-         
-
+        if (collision.collider.gameObject.tag == "Player")
+        {
+            isAttacking = true;
+        }
      }
 
-    // void OnCollisionExit2D(Collision collision)
-     //{
-        //if(collision.collider.gameObject.tag == "Player")
-        // {
-         // isAttacking = false;
-        // }
-    // }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.tag == "Player")
+        {
+            isAttacking = false;
+        }
+    }
+
 }
