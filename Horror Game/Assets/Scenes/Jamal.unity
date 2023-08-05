@@ -155,7 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableObject: {fileID: 516110205}
-  InteractKey: 101
 --- !u!61 &29147676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -370,6 +369,7 @@ MonoBehaviour:
   animator: {fileID: 1711509532}
   DoorOpen: 0
   DoorClose: 0
+  OpenDoor: 101
 --- !u!61 &384462719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -402,7 +402,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032916784, y: 0.04114592}
+  m_Offset: {x: 0.46611977, y: 0.0411458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -413,7 +413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6333451, y: 4.2093887}
+  m_Size: {x: 1.1714325, y: 2.9673433}
   m_EdgeRadius: 0
 --- !u!4 &384462720
 Transform:
@@ -10320,7 +10320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableObject: {fileID: 408712877}
-  InteractKey: 101
 --- !u!61 &1309293895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10633,6 +10632,7 @@ MonoBehaviour:
   animator: {fileID: 1711509532}
   DoorOpen: 0
   DoorClose: 0
+  OpenDoor: 0
 --- !u!61 &1711509531
 BoxCollider2D:
   m_ObjectHideFlags: 0

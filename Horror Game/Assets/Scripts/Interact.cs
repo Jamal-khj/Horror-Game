@@ -7,7 +7,6 @@ public class Interact : MonoBehaviour
 {
     // Setting Message when approaching object
     public GameObject InteractableObject;
-    public KeyCode InteractKey;
 
     // Start is called before the first frame update
     void Start()

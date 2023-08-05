@@ -6,26 +6,30 @@ public class DoorAnimator : MonoBehaviour
 {
     public Animator animator;
     public bool DoorOpen;
-   public bool DoorClose;
+    public bool DoorClose;
+    public KeyCode OpenDoor;
 
     void Start()
     {
         DoorOpen = false;
-       DoorClose = false;
+        DoorClose = false;
     }
 
     void Update()
     {
         animator.SetBool("Open", DoorOpen);
-       animator.SetBool("Close", DoorClose);
+        animator.SetBool("Close", DoorClose);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            DoorOpen = true;
-           DoorClose = false;
+      //      if (Input.GetKeyUp(OpenDoor))
+        //    {
+                DoorOpen = true;
+                DoorClose = false;
+       //     }
         }
     }
 
@@ -34,7 +38,7 @@ public class DoorAnimator : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
            DoorClose = true;
-            DoorOpen = false;
+           DoorOpen = false;
         }
     }
 }
