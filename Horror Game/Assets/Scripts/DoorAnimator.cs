@@ -34,7 +34,7 @@ public class DoorAnimator : MonoBehaviour
         if (collision.collider.gameObject.tag == "Player")
         {
           //  DoorClose = true;
-           // DoorOpen = false;
+            DoorOpen = false;
         }
     }
 }
