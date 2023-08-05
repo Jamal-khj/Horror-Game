@@ -44,7 +44,7 @@ public class health : MonoBehaviour
     {
         if (collision.collider.gameObject.tag == "Enemy1")
         {
-            Destroy(collision.collider.gameObject);
+            ///Destroy(collision.collider.gameObject);
             hp -= 1;
             for (int i = 0; i < hearts.Length; i++)
             {
