@@ -10079,7 +10079,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1213210013}
   - component: {fileID: 1213210012}
-  - component: {fileID: 1213210018}
   m_Layer: 0
   m_Name: Library door
   m_TagString: Untagged
@@ -10156,27 +10155,6 @@ Transform:
   m_Father: {fileID: 1711509529}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1213210018
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213210010}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 29776a246d26dea41ba999c2df7d75bd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1309293893
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,6 +10461,7 @@ GameObject:
   - component: {fileID: 1711509529}
   - component: {fileID: 1711509531}
   - component: {fileID: 1711509530}
+  - component: {fileID: 1711509532}
   m_Layer: 0
   m_Name: Door_Hinge
   m_TagString: Untagged
@@ -10518,7 +10497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f922ebdc27125d479fdbdc9f7e69c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1213210018}
+  animator: {fileID: 1711509532}
   DoorOpen: 0
 --- !u!61 &1711509531
 BoxCollider2D:
@@ -10565,6 +10544,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9922864}
   m_EdgeRadius: 0
+--- !u!95 &1711509532
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711509528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29776a246d26dea41ba999c2df7d75bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1941234196
 GameObject:
   m_ObjectHideFlags: 0
