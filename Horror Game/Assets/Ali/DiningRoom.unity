@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6836af54379513e45af83f937f32a56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyStartPosition: {fileID: 1538801637}
+  EnemyStartPosition: {fileID: 726296431}
 --- !u!1 &345803564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,11 +2387,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4665206860732989195, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.624
+      value: 4.84
       objectReference: {fileID: 0}
     - target: {fileID: 4665206860732989195, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: -2.97
       objectReference: {fileID: 0}
     - target: {fileID: 4665206860732989195, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2432,7 +2432,7 @@ PrefabInstance:
     - target: {fileID: 5083337714637754979, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1689746342}
     - target: {fileID: 5083337714637754979, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: enemyStart
       value: 
@@ -2444,7 +2444,7 @@ PrefabInstance:
     - target: {fileID: 6009718829116062059, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1689746342}
     - target: {fileID: 6494806735658075729, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2456,6 +2456,10 @@ PrefabInstance:
     - target: {fileID: 6862445690167508060, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255309753602333664, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+      propertyPath: m_Name
+      value: CrabSprite
       objectReference: {fileID: 0}
     - target: {fileID: 9107184041786920124, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       propertyPath: m_Enabled
@@ -2469,6 +2473,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2470380363523462400, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329650297}
+    - targetCorrespondingSourceObject: {fileID: 8255309753602333664, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749270224}
   m_SourcePrefab: {fileID: 100100000, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
 --- !u!1 &633983827
 GameObject:
@@ -5842,6 +5849,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1689746342 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9107184041786920124, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+  m_PrefabInstance: {fileID: 290568612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1698740876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,6 +5984,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1749270220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8255309753602333664, guid: 75688a58856f0e9458dacd3222e7a816, type: 3}
+  m_PrefabInstance: {fileID: 551273206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1749270224
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749270220}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8e06174a6aa3454c916408e5eb17e20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1809776168
 GameObject:
   m_ObjectHideFlags: 0
