@@ -501,8 +501,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209120769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.4860001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0498, y: -0.4860001, z: 0}
+  m_LocalScale: {x: 0.6159617, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 482751363}
@@ -1769,7 +1769,7 @@ GameObject:
   - component: {fileID: 586941461}
   - component: {fileID: 586941460}
   m_Layer: 0
-  m_Name: Library/Dining Door
+  m_Name: Living/Dining Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60385,7 +60385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990495637}
   m_Layer: 0
-  m_Name: Main Hall
+  m_Name: Main Hall Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
